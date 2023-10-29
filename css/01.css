@@ -1,0 +1,166 @@
+*{padding: 0%;margin: 0%;box-sizing: border-box;}
+body
+{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#content_alegria
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#header,#box1
+{
+    background-color: rgb(0, 162, 255);
+    height: 60%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left:-200px;
+    top: -200px;
+
+    text-indent: 20%;
+    border-radius: 100%;
+    color: rgb(255, 255, 255);
+}
+#sub,#sub_box
+{
+    height: 30%;
+    width: 20%;
+    border-radius: 100%;
+    background-color: rgba(41, 121, 240, 0.205);
+    display:flex ;
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    align-items: center;
+}
+h1
+{
+    font-size: 3rem;
+}
+header>p
+{
+    font-size: 1rem;
+    text-indent:20%;
+}
+#box1
+{
+    left:80%;
+    top: 60%;  
+    animation: wave 2s linear infinite alternate;
+}
+#sub_box
+{
+    top: 20%;
+    left: 20%;
+}
+@keyframes wave
+{
+    from{width: calc(35% + 320px);}
+}
+#main
+{
+    border-radius:20px;
+    padding: 5%;
+    margin: auto;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2%;
+    background-color: rgb(240, 240, 240);
+    height: 50%;
+    width: 50%;
+}
+#info_cont1,#info_cont2,#info_con3t
+{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+#info_cont3
+{
+    height: 6%;
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+}
+#info_cont2
+{
+    height: 10%;
+    gap: 50%;
+}
+#info_cont2 > input , #info_cont1 > input
+{
+    border: none;
+    border-bottom: 1px solid rgb(28, 89, 255);
+    background:none;
+    padding:1% ;
+    transition: 0.8s;
+
+}
+#info_cont2 > input:focus , #info_cont1 > input:focus
+{
+    outline: none;
+}
+#info_cont2 > input:invalid
+{
+    border-bottom:1px solid #ff0000;
+}
+#verify_cont
+{
+    display: flex;
+    gap: 2%;
+}
+#info_cont3 > select , #info_cont2 > select
+{
+
+    background:none;
+    border: none;
+    border-bottom: 0.5px solid rgb(0, 132, 255);
+    border-right: 0.5px solid rgb(0, 132, 255);
+    border-radius: 0 0 10px 0;
+    transition: 0.5s;
+}
+#info_cont3 > select:hover
+{
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+}
+
+#info_cont3 > select:focus
+{
+    outline: none;
+}
+#info_cont3 > button 
+{
+    transition: 0.2s;
+    width: 30%;
+    padding: 2%;
+    border-radius: 20px;
+    border: 1px solid rgb(83, 83, 255);
+}
+option
+{
+ transition: 1s;
+}
+option:hover
+{
+    background-color: rgb(78, 78, 255);
+}
+button:hover
+{
+    background-color: rgb(98, 98, 255);
+}
+
